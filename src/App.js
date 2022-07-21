@@ -40,11 +40,13 @@ console.log(messages)
       <div className="app__body">
        <Router>
          <Switch>
-           <Sidebar/>
-            <Route path="/rooms/:roomId">            
+           
+            <Route path="/app">  
+            <Sidebar/>          
                <Chat messages={messages}/>
             </Route>           
             <Route path="/">
+            <Sidebar/> 
             <Chat messages={messages}/>
           </Route> 
          </Switch>
